@@ -1,1 +1,0 @@
-Analysis of journey data combined with ACS geographical ethnicity data to investigate Capital Bikeshare's ridership and inclusion KPIs in Washinton DC.
