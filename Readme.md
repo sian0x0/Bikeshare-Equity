@@ -1,7 +1,7 @@
 # Captial Bikeshare - Ridership equity
 
 ## Project Goals
-* Assess performance on ridership diversity goals set by Captial Bikeshare (CB)
+* Assess performance on ridership diversity goals set by public-private company Captial Bikeshare (CB), Washington DC.
 * Develop new KPIs and make predictions
 
 Method: use geographical demographic information to cross-reference with journey start/end points
@@ -39,7 +39,9 @@ Cleaning:
 
 ![“Bikeshare users did not mirror the adult population of the Washington metropolitan region” Capital Bikeshare Member Survey Report, 2016](equitybikequote.png "The problem had been known to the company since 2016, but income and race-based divisions had not improved.")
 ### Demographic data
-American Community Survey (ACS) 2022. Processing steps:
+American Community Survey (ACS) 2022. Source
+
+Processing steps:
 * Extract census tracts within DC, exclude census tracts with under 1200 population as non-residental and/or tourist areas
 * Find the proportion of white (‘Race: One Race: White’) residents per census tract
 
@@ -56,6 +58,6 @@ American Community Survey (ACS) 2022. Processing steps:
 * Few changes in marketing/public information policy despite research into demographic reach
 
 ## Recommendations
-* Extend use of regression model with feature importance investigation to predict where new stations will have most impact.
+* Extend use of regression model with feature importance investigation to predict where new stations will have most impact
 * A/B testing of marketing/public information strategies based on new combined dataset
 * Resume user monitoring
