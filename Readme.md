@@ -1,15 +1,20 @@
 # Captial Bikeshare - Ridership equity
+Captial Bikeshare (CB) is a public-private company in, Washington DC, with a commitment to inclusivity as part of its mandate.
 
 ## Project Goals
-* Assess performance on ridership diversity goals set by public-private company Captial Bikeshare (CB), Washington DC.
+<img align="right" width="180"  src="equitybikequote.png">
+
+* Assess performance on ridership diversity goals set by CB
 * Develop new KPIs and make predictions
 
-Method: use geographical demographic information to cross-reference with journey start/end points
+### Method
+* Use geographical demographic information to cross-reference with journey start/end points
+* Analyze trips based on residential demographics
 
 ## About the data
 
 ### Trip Data 
-Captial Bikeshare trip data for April 2023. The data includes:
+Caiptal Bikeshare trip data for April 2023. The data includes:
 
 ```python
  #   Column              Non-Null Count   Dtype  
@@ -32,17 +37,17 @@ Source: https://capitalbikeshare.com/system-data
 
 Notes:
 * Excludes staff testing trips, and any trips lasting less than 60 seconds (potentially false starts or ends).
-* Dockless bikes and e-scooters (i.e., potentially without a namesstart or end station) are included after a certain point.
+* Dockless bikes and e-scooters (i.e., potentially without a named start or end station) are included after a certain point.
 
 Cleaning:
 * Exclude trip data outliers (improbable or impossible real-world conditions such as very long or negative durations)
 
-![“Bikeshare users did not mirror the adult population of the Washington metropolitan region” Capital Bikeshare Member Survey Report, 2016](equitybikequote.png "The problem had been known to the company since 2016, but income and race-based divisions had not improved.")
+
 ### Demographic data
 American Community Survey (ACS) 2022. Source
 
 Processing steps:
-* Extract census tracts within DC, exclude census tracts with under 1200 population as non-residental and/or tourist areas
+* Extract census tracts within DC, exclude census tracts with under 1200 population as non-residential and/or tourist areas
 * Find the proportion of white (‘Race: One Race: White’) residents per census tract
 
 ### Combine data
